@@ -204,6 +204,7 @@ image{
 .about-section{
     display: flex;
 }
+
 .features-descr{
     display: flex;
     padding: 120px 24px;
