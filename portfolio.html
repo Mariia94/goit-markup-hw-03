@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -20,8 +20,8 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-container">
-                <nav class="header-nav">
+            <div class="main">
+                <nav class="header-page">
                     <a href="./index.html" class="logo-first">WEB<span class="logo-second">STUDIO</span></a>
                     <ul class="header-link">
                         <li><a href="./index.html" class="header-link">Studio</a></li>
@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
                 <address>
-                    <ul class="header-items">
+                    <ul class="header-info">
                         <li><a href="mailto:info@devstudio.com" class="mail-address">info@devstudio.com</a>
                         </li>
                         <li><a href="tel:+110001111111" class="tel-address">+11 (000) 111-11-11</a>
@@ -41,88 +41,117 @@
         </div>
     </header>
     <main>
-        <section class="button-section">
-            <div class="container">
-                <ul class="buttons">
-                    <li>
-                        <button type="button" class="button">All</button>
-                    </li>
-                    <li>
-                        <button type="button" class="button">Web Site</button>
-                    </li>
-                    <li>
-                        <button type="button" class="button">App</button>
-                    </li>
-                    <li>
-                        <button type="button" class="button">Design</button>
-                    </li>
-                    <li>
-                        <button type="button" class="button">Marketing</button>
-                    </li>
-                </ul>
-            </div>
-            </div>
-            <section class="pic-section">
-                <div class="container">
-                    <ul class="picture">
-                        <li class="work-items">
-                            <img src="./images/banking-app.jpg" alt="banking-app" width="360px">
-                            <h3 class="features-title">Banking App Interface Concept</h3>
-                            <p class="main-info">App</p>
-                        </li>
-                        <li class="work-items">
-                            <img src="./images/payment.jpg" alt="cashless-payment" width="360px">
-                            <h3 class="features-title">Cashless payment</h3>
-                            <p class="main-info">Marketing</p>
-                        </li>
-                        <li class="work-items">
-                            <img src="./images/mediation.jpg" alt="mediation-app" width="360px">
-                            <h3 class="features-title">Mediation App</h3>
-                            <p class="main-info">App</p>
-                        </li>
-                        <li class="work-items">
-                            <img src="./images/taxi-service.jpg" alt="taxi-service" width="360px">
-                            <h3 class="features-title">Taxi Service</h3>
-                            <p class="main-info">Marketing</p>
-                        </li>
-                        <li class="work-items">
-                            <img src="./images/screen-img.jpg" alt="screen-illustrations" width="360px">
-                            <h3 class="features-title">Screen Illustrations</h3>
-                            <p class="main-info">Design</p>
-                        </li>
-                        <li class="work-items">
-                            <img src="./images/girl-in-glasses.jpg" alt="girl-in-glasses" width="360px">
-                            <h3 class="features-title">Online Courses</h3>
-                            <p class="main-info">Marketing.</p>
-                        </li>
-                        <li class="work-items">
-                            <img src="./images/instagram-pages.jpg" alt="instagram-site-pages" width="360px">
-                            <h3 class="features-title">Instagram Stories Concept</h3>
-                            <p class="main-info">Design</p>
-                        </li>
-                        <li class="work-items">
-                            <img src="./images/food-package.jpg" alt="food-package" width="360px">
-                            <h3 class="features-title">Organic Food</h3>
-                            <p class="main-info">Web Site</p>
-                        </li>
-                        <li class="work-items">
-                            <img src="./images/coffee.jpg" alt="a-cup-of-coffee" width="360px">
-                            <h3 class="features-title">Fresh Coffee</h3>
-                            <p class="main-info">Web Site</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+        <section class="portfolio-section">
+            <ul class="buttons">
+                <li>
+                    <button type="button" class="button">All</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Web Site</button>
+                </li>
+                <li>
+                    <button type="button" class="button">App</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Design</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Marketing</button>
+                </li>
+            </ul>
+            <ul class="picture">
+                <li class="work-items">
+                    <a class="work-items" href="">
+                        <img src="./images/banking-app.jpg" alt="banking-app">
+                        <div class="text">
+                            <h3 class="features-tagline">Banking App Interface Concept</h3>
+                            <p class="main-descr">App</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="work-items">
+                    <a class="work-items" href="">
+                        <img src="./images/payment.jpg" alt="cashless-payment">
+                        <div class="text">
+                            <h3 class="features-tagline">Cashless payment</h3>
+                            <p class="main-descr">Marketing</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="work-items">
+                    <a class="work-items" href="">
+                        <img src="./images/mediation.jpg" alt="mediation-app">
+                        <div class="text">
+                            <h3 class="features-tagline">Mediation App</h3>
+                            <p class="main-descr">App</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="work-items">
+                    <a class="work-items" href="">
+                        <img src="./images/taxi-service.jpg" alt="taxi-service">
+                        <div class="text">
+                            <h3 class="features-tagline">Taxi Service</h3>
+                            <p class="main-descr">Marketing</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="work-items">
+                    <a class="work-items" href="">
+                        <img src="./images/screen-img.jpg" alt="screen-illustrations">
+                        <div class="text">
+                            <h3 class="features-tagline">Screen Illustrations</h3>
+                            <p class="main-descr">Design</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="work-items">
+                    <a class="work-items" href="">
+                        <img src="./images/girl-in-glasses.jpg" alt="girl-in-glasses">
+                        <div class="text">
+                            <h3 class="features-tagline">Online Courses</h3>
+                            <p class="main-descr">Marketing.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="work-items">
+                    <a class="work-items" href="">
+                        <img src="./images/instagram-pages.jpg" alt="instagram-site-pages">
+                        <div class="text">
+                            <h3 class="features-tagline">Instagram Stories Concept</h3>
+                            <p class="main-descr">Design</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="work-items">
+                    <a class="work-items" href="">
+                        <img src="./images/food-package.jpg" alt="food-package">
+                        <div class="text">
+                            <h3 class="features-tagline">Organic Food</h3>
+                            <p class="main-descr">Web Site</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="work-items">
+                    <a class="work-items" href="">
+                        <img src="./images/coffee.jpg" alt="a-cup-of-coffee">
+                        <div class="text">
+                            <h3 class="features-tagline">Fresh Coffee</h3>
+                            <p class="main-descr">Web Site</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-container">.
-                <a href="./index.html" class="logo-first">WEB<span class="logo-footer">STUDIO</span></a>
-                <p class="footer-text">
-                    Increase the flow of customers and sales for your business with digital marketing & growth
-                    solutions.
-                </p>
+            <a href="./index.html" class="logo-first">WEB<span class="logo-footer">STUDIO</span></a>
+            <p class="footer-text">
+                Increase the flow of customers and sales for your business with digital marketing & growth
+                solutions.
+            </p>
+        </div>
     </footer>
 </body>
 
