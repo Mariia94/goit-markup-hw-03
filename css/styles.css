@@ -51,7 +51,6 @@ img {
 }
 
 .section{
-    padding-top: 120px;
     padding-bottom: 120px;
     background-color: var(--color-background);
 }
@@ -210,7 +209,6 @@ img {
 }
 
 .features-section{
-    padding-top: 120px;
     padding-bottom: 120px;
     max-width: 100%;
     background-color: var(--color-background-secondary);
@@ -221,6 +219,7 @@ img {
     justify-content: space-between;
     text-transform: none;
     gap: 24px;
+    padding-top: 120px;
 }
 
 .features-title {
@@ -298,9 +297,14 @@ img {
     color: var(--color-brand-inverted);
 } 
 
-.main{
+.main-header{
+    padding-top: 24px;
     display: flex;
     border-bottom: 1px solid var(--color-border);
+}
+
+.main{
+    display: flex;
 }
 
 .header-page {
@@ -319,15 +323,20 @@ img {
 }
 .portfolio-section{
    padding-top: 96px;
+   padding-bottom: 72px;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
     padding-bottom: 72px;
     background: var(--color-background);
+}
+
+.button-link{
+    border-radius: 4px;
+    margin-right: 24px;
 }
 
 .button {
@@ -341,19 +350,25 @@ img {
     color: var(--color-brand);
     border: none;
     cursor: pointer;
-    margin-right: 24px;
-    border-radius: 4px;
-    padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
+    flex: none;
+    flex-grow: 0;
+    padding: 12px;
 }
 
-.button:active {
+.button:active{
     background: var(--color-brand-secondary);
 }
 
 .button:not(:last-child){
     margin-right: 0;
+}
+
+.button:hover,
+.button:focus{
+    color: var(--color-background);
+    background: var(--color-brand-secondary);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .picture{
@@ -363,9 +378,9 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 120px;
-    margin-left: 156px;
-    margin-right: 156px;
+    padding-bottom: 120px;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 
 .work-items{
@@ -379,28 +394,24 @@ img {
 .features-tagline{
     font-size: 20px;
     line-height: 24px;
-    padding-top: 32px;
     color: var(--color-primary);
     letter-spacing: 0.02em;
-    flex: none;
     order: 0;
     flex-grow: 0;
+    margin-bottom: 8px;
 }
 
 .main-descr{
     letter-spacing: 0.02em;
     color: var(--color-primary-dark);
-    flex: none;
     order: 1;
     flex-grow: 0;
 }
 
 .text{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0px 16px;
-    gap: 8px;
-
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
